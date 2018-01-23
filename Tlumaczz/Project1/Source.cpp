@@ -68,13 +68,14 @@ int main(int argc,char** argv)
 		pomoc();
 		return 0;
 	}
-	if (sprk != "plen" && sprk != "enpl") {     //Sprawdza kierunki t³umaczenia
-		cout << "ZLE PARAMETRY PROGRAMU! ";
+	if (spri == sprs || spri == spro || spro == spri) {   //Sprawdza czy nie powtarzaja siê nazwy plikow
+		cout << "TE SAME NAWZY PLIKOW! ";
 		pomoc();
 		return 0;
 	}
-	if (spri == sprs || spri == spro || spro == spri) {   //Sprawdza czy nie powtarzaja siê nazwy plikow
-		cout << "TE SAME NAWZY PLIKOW! ";
+
+	if (sprk != "plen" && sprk != "enpl") {     //Sprawdza kierunki t³umaczenia
+		cout << "ZLE PARAMETRY PROGRAMU! ";
 		pomoc();
 		return 0;
 	}
