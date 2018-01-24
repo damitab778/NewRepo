@@ -80,6 +80,6 @@ int main(int argc,char** argv)
 		return 0;
 	}
 
-	tlumacz(spri, spro, sprs, sprk);
+	translate(spri, spro, sprs, sprk);
 	return 0;
 }
