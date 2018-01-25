@@ -257,9 +257,9 @@ void translate(const string & si, const string & so, const string & ss, const st
 			getline(pli, linia);												
 			int i = 0;										//deklaracja licznika
 		while (i < linia.length()) {						//sprawdza czy licznik nie jest wy¿szy od d³ugoœci wyrazu
-			if ((linia[i] > 64 && linia[i] < 91) || (linia[i] > 96 && linia[i] < 123)) {	//sprawdza czy jest litera
-			int pomi = i;																	//pom licznik zapamietuje poczatkowe miejsce znaku
-		while ((linia[i] > 64 && linia[i] < 91) || (linia[i] > 96 && linia[i] < 123)) {		//dodaje i tak d³ugo az sa litery 
+			if ((linia[i] > 64 && linia[i] < 91) || (linia[i] > 96 && linia[i] < 123)) {	//Sprawdzamy dzieki ascii czy to litera
+			int pomi = i;																	//pomocniczy licznik zapamietuje poczatkowe miejsce znaku
+		while ((linia[i] > 64 && linia[i] < 91) || (linia[i] > 96 && linia[i] < 123)) {		//Dodaje i do czasu gdy bd litery
 			i++;
 	}
 		string wyraz = linia.substr(pomi, (i - pomi));				//wycina wyraz z linii
